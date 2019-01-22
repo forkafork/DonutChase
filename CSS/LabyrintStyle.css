@@ -1,0 +1,172 @@
+﻿html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color:#D2D1D3;
+}
+
+    body > div {
+        margin: 1px auto;
+        text-align: center;
+    }
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+/* Display set to none*/
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Inner content of the overlay modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: inherit;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration:underline;
+        cursor:pointer;
+    }
+
+/*The size of each tile*/
+.tile {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*-----------------------------------------------------------*/
+/* MrRat will encounter walls and cheese.                    */
+/* MrRat can't move through walls, but can eat cheese.       */
+/*-----------------------------------------------------------*/
+.wall {
+    background-image: url(../Images/Bricks/brick_0.png);
+}
+.wall_0 {
+    background-image:url(../Images/Bricks/brick_0.png);
+}
+.wall_1 {
+    background-image: url(../Images/Bricks/brick_1.png);
+}
+.wall_2 {
+    background-image: url(../Images/Bricks/brick_2.png);
+}
+.wall_3 {
+    background-image: url(../Images/Bricks/brick_3.png);
+}
+.wall_4 {
+    background-image: url(../Images/Bricks/brick_4.png);
+}
+.wall_5 {
+    background-image: url(../Images/Bricks/brick_5.png);
+}
+.wall_6 {
+    background-image: url(../Images/Bricks/brick_6.png);
+}
+.wall_7 {
+    background-image: url(../Images/Bricks/brick_7.png);
+}
+.wall_8 {
+    background-image: url(../Images/Bricks/brick_8.png);
+}
+.wall_9 {
+    background-image: url(../Images/Bricks/brick_9.png);
+}
+
+/*Change to image*/
+.cheese {
+    background-image: url('../Images/Other/cheese.png');
+}
+
+/*The rat trap image*/
+.const_rat_trap {
+    background-image: url('../Images/Other/rat_trap.png');
+}
+
+/*The */
+.ratPoison {
+    background-image: url('../Images/Other/rat_poison.png');
+}
+
+.randomCheese {
+    background-image: url('../Images/Other/cheese_anim.gif');
+}
+
+
+.mrrat {
+    background-image: url('../Images/Rats/rat_right.png');
+}
+
+.right {
+    background-image: url('../Images/Rats/rat_right.png');
+}
+
+.left {
+    background-image: url('../Images/Rats/rat_left.png');
+}
+
+.up {
+    background-image: url('../Images/Rats/rat_up.png');
+}
+
+.down {
+    background-image: url('../Images/Rats/rat_down.png');
+}
+
+span {
+    font-family:Verdana;
+    font-size:large;
+}
+

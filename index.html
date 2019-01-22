@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Cheese Chase</title>
+    <link href="CSS/LabyrintStyle.css" rel="stylesheet" />
+    <script type="text/javascript" src="JavaScript/Labyrinth_1.js"></script>
+</head>
+<body>
+    <div id="divScreenItem"></div>
+    <audio id="ratHappyAudio">
+        <source src="http://sprott.physics.wisc.edu/wop/sounds/rat2.wav" type="audio/vnd.wave">
+    </audio>
+    <audio id="ratDieAudio">
+        <source src="http://s1download-universal-soundbank.com/mp3/sounds/12753.mp3" type="audio/mp3" />
+    </audio>
+    <div>
+        <div id="divLives">
+            <img id="imgLiveNrOne" src="Images/Rats/rat_large.png" />
+            <img id="imgLiveNrTwo" src="Images/Rats/rat_large.png" />
+            <img id="imgLiveNrThree" src="Images/Rats/rat_large.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>Score:</span><span id="spanScore">00000</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            <span id="spanTime"><time id="time">00:00</time></span>
+        </div>
+        <script src="JavaScript/Labyrint.js"></script>
+    </div>
+
+    <div id="modalRatDied" class="modal">
+        <div class="modal-content">
+            <span id="modalInfoText"></span>
+            <span id="closeAndContinue" class="close"></span>
+        </div>
+
+    </div>
+</body>
+</html>
